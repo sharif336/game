@@ -39,6 +39,13 @@ nav {
 
 }
 
+.full {
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+   width: 100px;
+    height: 50px;
+}
+
 nav>ul {
     display: flex;
 }
@@ -76,7 +83,9 @@ nav li a {
 .banner-content>.btn-primary {
     display: flex;
     gap: 5px;
-    margin: 10px 5px;
+    margin: 5px 10px;
+    position: relative;
+    right: 40px;
 }
 
 #sign {
@@ -160,11 +169,12 @@ main {}
 .play-img-container {
     display: flex;
     justify-content: space-evenly;
-   
+
 }
-.horse-img{
+
+.horse-img {
     margin-bottom: 0;
-    
+
 }
 
 .card-stats {
@@ -228,34 +238,68 @@ main {}
     left: 40px;
 }
 
-.buttons-img-container{
+.buttons-img-container {
     display: flex;
+}
+
+.footer-container {
+    text-align: center;
+    padding: 50px 50px;
+    margin-top: 10px;
 }
 
 
 
 
- .buttons-img-container div{
-    
+.buttons-img-container div {
+
     display: flex;
     margin-bottom: 20px;
     justify-content: center;
     gap: 10px;
-    
+
 }
-footer{
+
+footer {
     background: #0B0223;
-    height: auto;
-    display: flex;
-    margin-top: 100px;
+    margin-top: 50px;
+
 }
-.white{
+
+.footer-description {
+    color: #FFF;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+}
+
+.footer-ending {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.white {
     color: #efebeb;
 }
-.fet{
-    display: flex;
-    text-align: center;
 
+
+
+div .lies {
+    color: #FFF;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+}
+
+footer>.footer-container {
+    text-align: center;
+    padding: 50px 50px;
+    margin-top: 10px;
 }
 
 @media screen and (max-width:576px) {
@@ -288,13 +332,14 @@ footer{
     }
 
     .talk {
-        position: static;
-        margin-left: 50px;
+        position: relative;
+        top: 10px;
+        left: 20px;
     }
 
     .instantly-container .instantly-content {
         position: static;
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
     .horse-img .horse img {
@@ -309,6 +354,7 @@ footer{
 
     .play-img-container {
         align-items: center;
+        margin-left: 10px;
     }
 
     .buttons-img-container {
@@ -317,14 +363,33 @@ footer{
 
     .buttons-img-container p {
         position: relative;
-        right: 30px;
+        right: 50px;
+        
     }
-    .buttons-img-container div:hover {
-       ;
+    .buttons-img-container img {
+        margin-right: 50px;
     }
-    .buttons-img-container{
+
+   
+
+    .buttons-img-container {
         display: flex;
         justify-content: center;
     }
+    footer{
+        margin-left: 0px;
+    }
+
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    .header{
+        padding: 50px;
+        width: 100%;
+    }
+   .banner{
+    flex-direction: column;
+   }
+
     
 }
